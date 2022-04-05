@@ -3,9 +3,19 @@
   "version": "1.0.0",
   "description": "Kaholo library for plugins",
   "main": "kaholo-plugin-library.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx jest .",
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint . --fix"
+  },
   "author": "Kaholo",
   "license": "ISC",
+  "devDependencies": {
+    "eslint": "8.8.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.25.4",
+    "jest": "27.5.0"
+  },
   "dependencies": {
     "lodash": "4.17.21"
   }

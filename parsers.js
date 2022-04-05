@@ -35,7 +35,7 @@ function object(value) {
 }
 
 function number(value) {
-  const validNumber = (value) => _.isNumber(value) && _.isFinite(value) && !_.isNaN(value);
+  const validNumber = (val) => _.isNumber(val) && _.isFinite(val) && !_.isNaN(val);
   if (validNumber(value)) {
     return value;
   }
