@@ -46,7 +46,7 @@ function loadMethodFromConfiguration(methodName) {
 
 function loadConfiguration() {
   try {
-    // eslint-disable-next-line global-require
+    // eslint-disable-next-line global-require, import/no-unresolved
     return require("../../config.json");
   } catch (exception) {
     console.error(exception);
