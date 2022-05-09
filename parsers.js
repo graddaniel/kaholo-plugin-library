@@ -19,6 +19,8 @@ function resolveParser(type) {
       return autocomplete;
     case "array":
       return array;
+    case "sshKey":
+      return string;
     default:
       throw new Error(`Can't resolve parser of type "${type}"`);
   }
